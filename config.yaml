@@ -1,0 +1,26 @@
+project:
+  name: abarrotes-micromarket-segmentation
+  random_seed: 42
+
+region:
+  name: ZMVM
+  # INEGI state codes: 09 = Mexico City, 15 = State of Mexico, 13 = Hidalgo
+  states: ["09", "15", "13"]
+  # Municipalities per state (INEGI 3-digit codes). "all" = whole state.
+  # The ZMVM municipality list for 15 and 13 is filled in S2 from the official
+  # metropolitan-area delimitation. To scale to another state, change this block.
+  municipalities:
+    "09": all
+    "15": []
+    "13": []
+
+stores:
+  scian_target: ["461110"]   # retail tiendas de abarrotes (confirmed against DENUE in S2)
+  competition_radius_m: 500
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  models: models
+  figures: reports/figures

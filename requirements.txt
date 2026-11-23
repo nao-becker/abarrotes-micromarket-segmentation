@@ -1,0 +1,17 @@
+pandas>=2.2
+numpy>=1.26
+pyyaml
+requests
+pyarrow
+geopandas
+shapely
+scikit-learn>=1.4
+scipy
+matplotlib
+seaborn
+plotly
+folium
+umap-learn
+shap
+joblib
+jupyter
