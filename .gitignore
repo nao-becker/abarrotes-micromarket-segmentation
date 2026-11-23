@@ -1,0 +1,18 @@
+# Data files are large and downloaded by script, so they are not committed
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Misc
+*.zip
+.env
+.DS_Store
+Thumbs.db
