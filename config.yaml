@@ -11,8 +11,13 @@ region:
   # metropolitan-area delimitation. To scale to another state, change this block.
   municipalities:
     "09": all
-    "15": []
-    "13": []
+    "13": ["013", "069"]    # Atotonilco de Tula, Tizayuca
+    "15": ["002", "011", "013", "020", "022", "023", "024", "025", "028", "029",
+           "030", "031", "033", "035", "037", "038", "039", "044", "046", "053",
+           "057", "058", "059", "060", "069", "070", "075", "081", "083", "084",
+           "089", "091", "092", "093", "095", "099", "100", "103", "104", "108",
+           "109", "120", "121", "122", "125"]
+
 
 stores:
   scian_target: ["461110"]   # retail tiendas de abarrotes (confirmed against DENUE in S2)
