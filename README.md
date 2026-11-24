@@ -33,6 +33,18 @@ identify expansion zones.
 
 ## How to reproduce
 
+First time only (Anaconda Prompt):
+
+    conda create -n capstone python=3.12 -y
+    conda activate capstone
+    pip install -r requirements.txt
+
+Every session:
+
+    cd <path to this repo>
+    conda activate capstone
+    jupyter lab
+
 1. `pip install -r requirements.txt`
 2. Review `config.yaml` (region, competition radius, random seed)
 3. `python -m src.data.download` → `python -m src.features.build_features` → `python -m src.models.train_clustering`
